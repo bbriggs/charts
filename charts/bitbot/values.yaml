@@ -15,8 +15,8 @@ fullnameOverride: ""
 
 persistence:
   size: "1Gi"
-  storageClassName: ""
-  accessMode: ReadWriteOnce
+  accessModes:
+    - ReadWriteOnce
 
 serviceAccount:
   # Specifies whether a service account should be created
