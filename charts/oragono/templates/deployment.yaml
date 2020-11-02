@@ -1,0 +1,86 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "oragono.fullname" . }}
+  labels:
+    {{- include "oragono.labels" . | nindent 4 }}
+spec:
+{{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+{{- end }}
+  selector:
+    matchLabels:
+      {{- include "oragono.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+    {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      labels:
+        {{- include "oragono.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "oragono.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: ircd
+              containerPort: {{ .Values.service.port }}
+              protocol: TCP
+            - name: ircs
+              containerPort: {{ .Values.service.securePort }}
+          livenessProbe:
+            tcpSocket:
+              port: ircd
+            periodSeconds: 60
+          readinessProbe:
+            tcpSocket:
+              port: ircd
+            initialDelaySeconds: 60
+          startupProbe:
+            tcpSocket:
+              port: ircd
+            failureThreshold: 30
+            periodSeconds: 10
+          volumeMounts:
+            - mountPath: /ircd/ircd.yaml
+              name: config
+              subPath: ircd.yaml
+            - mountPath: /certs/
+              name: certificates
+            - mountPath: /data
+              name: data
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: config
+          configMap:
+            name: {{ include "oragono.fullname" . }}
+        - name: certificates
+          secret:
+            secretName: {{ .Values.tls.secretName }}
+        - name: data
+          persistentVolumeClaim:
+            claimName: {{ include "oragono.fullname" . }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
