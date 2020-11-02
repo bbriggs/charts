@@ -3,9 +3,9 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-09-22T19:29:53.603269745-04:00"
+    created: "2020-11-02T10:37:15.793294836-05:00"
     description: A golang chatbot
-    digest: 4dd4da77bab0746c72413fc84b9dc13f57a4176981920ae8b5edf252ff9c89f1
+    digest: f8a7900df9cf1169c8c9c8e8f6756616c5dd68aea0ba6bafb4642922107d68aa
     name: bitbot
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-09-22T19:29:53.602951696-04:00"
+    created: "2020-11-02T10:37:15.787626849-05:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -21,4 +21,15 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/bitbot-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-22T19:29:53.602467252-04:00"
+  oragono:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2020-11-02T10:37:15.79364711-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 09fd73c4e30267c19727e1803592a0a0d25f385ee569aee8906dfc93d5087d3e
+    name: oragono
+    type: application
+    urls:
+    - https://bbriggs.github.io/charts/oragono-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-11-02T10:37:15.783003747-05:00"
