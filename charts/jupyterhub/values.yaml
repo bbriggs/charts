@@ -106,6 +106,8 @@ hub:
   authenticatePrometheus:
   redirectToServer:
   shutdownOnLogout:
+  secret:
+    annotations: {}
   templatePaths: []
   templateVars: {}
   livenessProbe:
