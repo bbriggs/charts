@@ -92,11 +92,13 @@ spec:
           resources:
             {{- .Values.proxy.chp.resources | toYaml | trimSuffix "\n" | nindent 12 }}
           env:
+            {{- if eq .Values.proxy.secretType "default"}}
             - name: CONFIGPROXY_AUTH_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: {{ .Values.hub.existingSecret | default "hub-secret" }}
                   key: proxy.token
+            {{- end}}
             {{- include "jupyterhub.extraEnv" .Values.proxy.chp.extraEnv | nindent 12 }}
           {{- with .Values.proxy.chp.image.pullPolicy }}
           imagePullPolicy: {{ . }}

@@ -156,11 +156,13 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.namespace
+            {{- if eq .Values.proxy.secretType "default"}}
             - name: CONFIGPROXY_AUTH_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: {{ .Values.hub.existingSecret | default "hub-secret" }}
                   key: proxy.token
+            {{- end}}
             {{- if .Values.auth.state.enabled }}
             - name: JUPYTERHUB_CRYPT_KEY
               valueFrom:
