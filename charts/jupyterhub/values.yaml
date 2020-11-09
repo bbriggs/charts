@@ -130,6 +130,7 @@ rbac:
 # pod and proxy-http service.
 proxy:
   secretToken: ''
+  secretType: default
   annotations: {}
   deploymentStrategy:
     ## type: Recreate
