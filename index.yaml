@@ -3,9 +3,9 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:35:10.517151061-05:00"
+    created: "2020-11-09T11:40:48.332908769-05:00"
     description: A golang chatbot
-    digest: 7c980a2b0bc023d3ef4bd7f36164e67b7985f1b9a3d18741ea95d33b14180279
+    digest: ddfcb49f1a1c968839610fabf494473b6e82572bf57fa2337fb413da9c7ad306
     name: bitbot
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:35:10.516812921-05:00"
+    created: "2020-11-09T11:40:48.332555407-05:00"
     description: A golang chatbot
     digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:35:10.516491205-05:00"
+    created: "2020-11-09T11:40:48.332214455-05:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -34,9 +34,9 @@ entries:
   jupyterhub:
   - apiVersion: v1
     appVersion: 1.2.0b1
-    created: "2020-11-09T11:35:10.519533704-05:00"
+    created: "2020-11-09T11:40:48.335322256-05:00"
     description: Multi-user Jupyter installation
-    digest: 527254808cb2774fd5e0d6bfad54b32171c51247c66afb1bb667d92c7b231329
+    digest: cbc9a15d7d9edf841187abf31fd0d09b67f911f90dcd0701f2a090c6baa889c7
     home: https://z2jh.jupyter.org
     icon: https://jupyter.org/assets/hublogo.svg
     kubeVersion: '>=1.11.0-0'
@@ -49,17 +49,17 @@ entries:
     sources:
     - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
     urls:
-    - https://bbriggs.github.io/charts/jupyterhub-0.0.1-set.by.chartpress.tgz
-    version: 0.0.1-set.by.chartpress
+    - https://bbriggs.github.io/charts/jupyterhub-0.0.1.tgz
+    version: 0.0.1
   oragono:
   - apiVersion: v2
     appVersion: latest
-    created: "2020-11-09T11:35:10.519920549-05:00"
+    created: "2020-11-09T11:40:48.335706345-05:00"
     description: A Helm chart for Kubernetes
-    digest: 4bc59973a958cf7cd63ffa59d8057834d7145c414d892f0fdcecdf180bd241d1
+    digest: 2a2351c5f8612783439aee4f9b8f5e5af6c840eee4ecc8e8f1b1a189db385565
     name: oragono
     type: application
     urls:
     - https://bbriggs.github.io/charts/oragono-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-09T11:35:10.516080335-05:00"
+generated: "2020-11-09T11:40:48.331801412-05:00"
