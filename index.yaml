@@ -3,9 +3,9 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:43:40.747191562-05:00"
+    created: "2020-11-09T18:01:15.644709232-05:00"
     description: A golang chatbot
-    digest: 40090cb23de274a10c6a052bbc03bd47831f81255c9ee3d18f406613c629d1fb
+    digest: 1196ae12bbf1e89996a49e248db70d28d5a62cc463ae5c30bbe02f58c188a86c
     name: bitbot
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:43:40.746837589-05:00"
+    created: "2020-11-09T18:01:15.644354664-05:00"
     description: A golang chatbot
     digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:43:40.746508519-05:00"
+    created: "2020-11-09T18:01:15.643580598-05:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -34,7 +34,26 @@ entries:
   jupyterhub:
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2020-11-09T11:43:40.749570148-05:00"
+    created: "2020-11-09T18:01:15.65283382-05:00"
+    description: Multi-user Jupyter installation
+    digest: 665e09da7f668697fe2cd721df58d42dc1362fc399ef85c84c5dd99c9588d378
+    home: https://z2jh.jupyter.org
+    icon: https://jupyter.org/assets/hublogo.svg
+    kubeVersion: '>=1.11.0-0'
+    maintainers:
+    - email: erik@sundellopensource.se
+      name: Erik Sundell
+    - name: Simon Li
+      url: https://github.com/manics/
+    name: jupyterhub
+    sources:
+    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
+    urls:
+    - https://bbriggs.github.io/charts/jupyterhub-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 1.2.0b1
+    created: "2020-11-09T18:01:15.649640467-05:00"
     description: Multi-user Jupyter installation
     digest: 931bf377850db56a34126043d786ab5a2180b7a450b50ce756009452707b4f23
     home: https://z2jh.jupyter.org
@@ -54,12 +73,12 @@ entries:
   oragono:
   - apiVersion: v2
     appVersion: latest
-    created: "2020-11-09T11:43:40.74994679-05:00"
+    created: "2020-11-09T18:01:15.653222636-05:00"
     description: A Helm chart for Kubernetes
-    digest: ab2d51f59367b32931f3a21e7317518530577eb06f3e8eb0070ffcffdaab6e1a
+    digest: dce7ef1536c2a5dae457e5d317e388f4ea80e20286ab63b5fbfb7ea20c9e8287
     name: oragono
     type: application
     urls:
     - https://bbriggs.github.io/charts/oragono-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-09T11:43:40.746024506-05:00"
+generated: "2020-11-09T18:01:15.578714088-05:00"
