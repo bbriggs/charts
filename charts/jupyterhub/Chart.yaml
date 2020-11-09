@@ -1,6 +1,6 @@
 # Chart.yaml v1 reference: https://v2.helm.sh/docs/developing_charts/#the-chart-yaml-file
 # Chart.yaml v2 reference: https://helm.sh/docs/topics/charts/#the-chartyaml-file
-apiVersion: v1
+apiVersion: v2
 name: jupyterhub
 version: 0.0.1
 appVersion: 1.2.0b1

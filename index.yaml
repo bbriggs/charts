@@ -3,9 +3,9 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:40:48.332908769-05:00"
+    created: "2020-11-09T11:43:40.747191562-05:00"
     description: A golang chatbot
-    digest: ddfcb49f1a1c968839610fabf494473b6e82572bf57fa2337fb413da9c7ad306
+    digest: 40090cb23de274a10c6a052bbc03bd47831f81255c9ee3d18f406613c629d1fb
     name: bitbot
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:40:48.332555407-05:00"
+    created: "2020-11-09T11:43:40.746837589-05:00"
     description: A golang chatbot
     digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-09T11:40:48.332214455-05:00"
+    created: "2020-11-09T11:43:40.746508519-05:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -32,11 +32,11 @@ entries:
     - https://bbriggs.github.io/charts/bitbot-0.1.0.tgz
     version: 0.1.0
   jupyterhub:
-  - apiVersion: v1
+  - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2020-11-09T11:40:48.335322256-05:00"
+    created: "2020-11-09T11:43:40.749570148-05:00"
     description: Multi-user Jupyter installation
-    digest: cbc9a15d7d9edf841187abf31fd0d09b67f911f90dcd0701f2a090c6baa889c7
+    digest: 931bf377850db56a34126043d786ab5a2180b7a450b50ce756009452707b4f23
     home: https://z2jh.jupyter.org
     icon: https://jupyter.org/assets/hublogo.svg
     kubeVersion: '>=1.11.0-0'
@@ -54,12 +54,12 @@ entries:
   oragono:
   - apiVersion: v2
     appVersion: latest
-    created: "2020-11-09T11:40:48.335706345-05:00"
+    created: "2020-11-09T11:43:40.74994679-05:00"
     description: A Helm chart for Kubernetes
-    digest: 2a2351c5f8612783439aee4f9b8f5e5af6c840eee4ecc8e8f1b1a189db385565
+    digest: ab2d51f59367b32931f3a21e7317518530577eb06f3e8eb0070ffcffdaab6e1a
     name: oragono
     type: application
     urls:
     - https://bbriggs.github.io/charts/oragono-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-09T11:40:48.331801412-05:00"
+generated: "2020-11-09T11:43:40.746024506-05:00"
