@@ -3,33 +3,53 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-02T10:37:15.793294836-05:00"
+    created: "2020-11-09T11:05:03.293097384-05:00"
     description: A golang chatbot
-    digest: f8a7900df9cf1169c8c9c8e8f6756616c5dd68aea0ba6bafb4642922107d68aa
+    digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
     type: application
     urls:
-    - https://bbriggs.github.io/charts/bitbot-0.1.1.tgz
+    - bitbot-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-02T10:37:15.787626849-05:00"
+    created: "2020-11-09T11:05:03.292750504-05:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
     type: application
     urls:
-    - https://bbriggs.github.io/charts/bitbot-0.1.0.tgz
+    - bitbot-0.1.0.tgz
     version: 0.1.0
+  jupyterhub:
+  - apiVersion: v1
+    appVersion: 1.2.0b1
+    created: "2020-11-09T11:05:03.295513897-05:00"
+    description: Multi-user Jupyter installation
+    digest: 52fd194abf0ac08b8b7be20c8024da7dd54708a31baaaeea82a46ef9262ad070
+    home: https://z2jh.jupyter.org
+    icon: https://jupyter.org/assets/hublogo.svg
+    kubeVersion: '>=1.11.0-0'
+    maintainers:
+    - email: erik@sundellopensource.se
+      name: Erik Sundell
+    - name: Simon Li
+      url: https://github.com/manics/
+    name: jupyterhub
+    sources:
+    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
+    urls:
+    - jupyterhub-0.0.1-set.by.chartpress.tgz
+    version: 0.0.1-set.by.chartpress
   oragono:
   - apiVersion: v2
     appVersion: latest
-    created: "2020-11-02T10:37:15.79364711-05:00"
+    created: "2020-11-09T11:05:03.295886143-05:00"
     description: A Helm chart for Kubernetes
-    digest: 09fd73c4e30267c19727e1803592a0a0d25f385ee569aee8906dfc93d5087d3e
+    digest: 8d222d36bc508f9f389dd6cb52240081daec694ca90316e031909c4f4d2d844d
     name: oragono
     type: application
     urls:
-    - https://bbriggs.github.io/charts/oragono-0.1.0.tgz
+    - oragono-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-02T10:37:15.783003747-05:00"
+generated: "2020-11-09T11:05:03.290046075-05:00"
