@@ -1,0 +1,123 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "fusionauth.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "fusionauth.name" . }}
+    helm.sh/chart: {{ include "fusionauth.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "fusionauth.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+    {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      labels:
+        app.kubernetes.io/name: {{ include "fusionauth.name" . }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
+    spec:
+      initContainers:
+        # App has to wait for the database to be online "depends_on" workaround
+        - name: wait-for-db
+          image: darthcabs/tiny-tools:1
+          args:
+            - /bin/bash
+            - -c
+            - >
+              set -x;
+              while [[ "$(nc -zv '{{- .Values.database.host -}}' {{ .Values.database.port }} &> /dev/null; echo $?)" != 0 ]]; do
+                echo '.'
+                sleep 15;
+              done
+        # App has to wait for elasticsearch to be online "depends_on" workaround
+        {{- if eq .Values.search.engine "elasticsearch" }}
+        - name: wait-for-search
+          image: darthcabs/tiny-tools:1
+          args:
+            - /bin/bash
+            - -c
+            - >
+              set -x;
+              while [[ "$(nc -zv '{{- .Values.search.host -}}' {{ .Values.search.port }} &> /dev/null; echo $?)" != 0 ]]; do
+                echo '.'
+                sleep 15;
+              done
+        {{- end }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 9011
+              protocol: TCP
+          livenessProbe:
+            {{- toYaml .Values.livenessProbe | nindent 12 }}
+          readinessProbe:
+            {{- toYaml .Values.readinessProbe | nindent 12 }}
+          startupProbe:
+            {{- toYaml .Values.startupProbe | nindent 12 }}
+          env:
+            - name: DATABASE_USER
+              value: {{ .Values.database.user }}
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "fusionauth.database.secretName" . }}
+                  key: password
+            - name: DATABASE_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "fusionauth.database.secretName" . }}
+                  key: rootpassword
+            - name: DATABASE_ROOT_USER
+              value: {{ .Values.database.root.user }}
+            - name: DATABASE_URL
+              value: "jdbc:{{ .Values.database.protocol }}://{{- required "A valid database host is required!" .Values.database.host -}}:{{ .Values.database.port }}/{{ .Values.database.name }}{{ include "fusionauth.databaseTLS" . }}"
+            - name: FUSIONAUTH_SEARCH_ENGINE_TYPE
+              value: {{ .Values.search.engine }}
+              {{- if eq .Values.search.engine "elasticsearch" }}
+            - name: FUSIONAUTH_SEARCH_SERVERS
+              {{- if .Values.search.searchURL }}
+              value: "{{ .Values.search.searchURL }}"
+              {{- else }}
+              value: "{{ .Values.search.protocol }}://{{ include "fusionauth.searchLogin" . }}{{- required "A valid elasticsearch host is required!" .Values.search.host -}}:{{ .Values.search.port }}"
+              {{- end }}
+              {{- end }}
+            {{- range $key, $value := .Values.environment }}
+            - name: {{ $key }}
+              value: {{ $value }}
+            {{- end }}
+          resources:
+              {{- toYaml .Values.resources | nindent 12 }}
+          {{- if .Values.kickstart.enabled }}
+          volumeMounts:
+            - name: {{ template "fusionauth.fullname" . }}-config-volume
+              mountPath: /kickstart
+          {{- end }}
+      {{- if .Values.kickstart.enabled }}
+      volumes:
+        - name: {{ template "fusionauth.fullname" . }}-config-volume
+          configMap:
+            name: {{ template "fusionauth.fullname" . }}-kickstart-config
+      {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+          {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      restartPolicy: Always

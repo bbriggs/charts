@@ -1,0 +1,139 @@
+# Default values for fusionauth.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+image:
+  repository: fusionauth/fusionauth-app
+  tag: 1.16.1
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 9011
+  annotations: {}
+  spec: {}
+
+database:
+  protocol: postgresql
+  host: ""
+  port: 5432
+  tls: false
+  tlsMode: require
+  name: fusionauth
+
+  # To use an existing secret, set `existingSecret` to the name of the secret. We expect two keys: `password` and `rootpassword`
+  existingSecret: ""
+  user: ""
+  password: ""
+  # These credentials are used for bootstrapping the database
+  root:
+    user: ""
+    password: ""
+
+search:
+  # Valid values for engine are 'elasticsearch' or (if you are using fusionauth >= 1.16.0-rc.1) 'database'.
+  engine: elasticsearch
+  protocol: http
+  host: ""
+  port: 9200
+  # user: ""
+  # password: ""
+
+environment:
+  # Database env DATABASE_USER, DATABASE_PASSWORD, DATABASE_ROOT_USER, DATABASE_ROOT_PASSWORD, DATABASE_URL will be defined in database
+  FUSIONAUTH_MEMORY: 256M
+  # FUSIONAUTH_API_KEY: test
+  # Its important to add /kickstart/<file> as prefix to your kickstart file else it won't work! All other files will be mounted below /kickstart/
+  # FUSIONAUTH_KICKSTART: /kickstart/kickstart.json
+kickstart:
+  enabled: false
+  data: {}
+    # kickstart.json: |
+    #    {
+    #      "variables": {
+    #        "defaultTenantId": "d7d09513-a3f5-401c-9685-34ab6c552453",
+    #        "adminEmail": "admin@fusionauth.io",
+    #        "adminPassword": "password",
+    #      },
+    #      "apiKeys": [
+    #        {
+    #          "key": "bf69486b-4733-4470-a592-f1bfce7af580",
+    #          "description": "Core API Key"
+    #        }
+    #      ],
+    #      "requests": [
+    #        {
+    #          "method": "POST",
+    #          "url": "/api/user/registration",
+    #          "body": {
+    #            "user": {
+    #              "email": "#{adminEmail}",
+    #              "password": "#{adminPassword}"
+    #            },
+    #            "registration": {
+    #              "applicationId": "#{FUSIONAUTH_APPLICATION_ID}",
+    #              "roles": [
+    #                "admin"
+    #              ]
+    #            }
+    #          }
+    #        }
+    #      ]
+    #    }
+    # setup-password.html: |
+    #    <div>Test</div>
+    # setup-password.txt: |
+    #    Hallo
+
+ingress:
+  enabled: false
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  paths: []
+  # Define complete path objects, will be inserted before regular paths. Can be useful for things like ALB Ingress Controller actions
+  extraPaths: []
+  hosts: []
+    # - chart-example.local
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #  cpu: 100m
+  #  memory: 128Mi
+  # requests:
+  #  cpu: 100m
+  #  memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+livenessProbe:
+  httpGet:
+    path: /
+    port: http
+  periodSeconds: 30
+readinessProbe:
+  httpGet:
+    path: /
+    port: http
+startupProbe:
+  httpGet:
+    path: /
+    port: http
+  failureThreshold: 20
+  periodSeconds: 10
