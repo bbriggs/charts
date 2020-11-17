@@ -1,0 +1,53 @@
+---
+kind: Deployment
+metadata:
+  name: event-triggers-{{ include "hasura.fullname" . }}
+  labels:
+    {{- include "hasura.eventTrigger.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.eventTriggers.autoscaling.enabled }}
+  replicas: {{ .Values.eventTriggers.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "hasura.eventTrigger.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.eventTriggers.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "hasura.eventTrigger.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.eventTriggers.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "hasura.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}-event-triggers
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.eventTriggers.image.repository }}:{{ .Values.eventTriggers.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.eventTriggers.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
+          resources:
+            {{- toYaml .Values.eventTriggers.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.eventTriggers.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.eventTriggers.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
