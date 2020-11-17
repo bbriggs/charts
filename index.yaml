@@ -3,9 +3,9 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-10T08:27:09.690275078-05:00"
+    created: "2020-11-17T16:34:25.933647458-05:00"
     description: A golang chatbot
-    digest: c1cc5a7443a7a0b9c413b5afdaca3288fdefd3a796c8da2eeaeeede00e93da82
+    digest: 908f25a7e81b4c4ed11986983531e9b3e2b06568b58efa58dd190ada5a2ff771
     name: bitbot
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-10T08:27:09.689884202-05:00"
+    created: "2020-11-17T16:34:25.933310543-05:00"
     description: A golang chatbot
     digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2020-11-10T08:27:09.689365027-05:00"
+    created: "2020-11-17T16:34:25.932975864-05:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -34,9 +34,9 @@ entries:
   fusionauth:
   - apiVersion: v1
     appVersion: 1.16.1
-    created: "2020-11-10T08:27:09.690901499-05:00"
+    created: "2020-11-17T16:34:25.93426681-05:00"
     description: Helm chart for fusionauth
-    digest: c8e5acad1a95ac3472e2e05f730750f738f72bb611ccde63cf369761290f146e
+    digest: 26a95d14f021774abe061e80cab49b5f41735e293ea46bf3c54d6be313c01943
     name: fusionauth
     urls:
     - https://bbriggs.github.io/charts/fusionauth-0.4.2.tgz
@@ -44,9 +44,9 @@ entries:
   jupyterhub:
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2020-11-10T08:27:09.696406355-05:00"
+    created: "2020-11-17T16:34:25.939733987-05:00"
     description: Multi-user Jupyter installation
-    digest: f616e0a064c45e297de736d78d2065743c22c226a902e209e8c5ea9f6ef099dd
+    digest: 8204f9c94a90b1043b3e5178c3b3b5122498010fc273a959458aff89e933423b
     home: https://z2jh.jupyter.org
     icon: https://jupyter.org/assets/hublogo.svg
     kubeVersion: '>=1.11.0-0'
@@ -63,7 +63,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2020-11-10T08:27:09.693473582-05:00"
+    created: "2020-11-17T16:34:25.936747573-05:00"
     description: Multi-user Jupyter installation
     digest: 931bf377850db56a34126043d786ab5a2180b7a450b50ce756009452707b4f23
     home: https://z2jh.jupyter.org
@@ -83,12 +83,29 @@ entries:
   oragono:
   - apiVersion: v2
     appVersion: latest
-    created: "2020-11-10T08:27:09.696770158-05:00"
+    created: "2020-11-17T16:34:25.940117276-05:00"
     description: A Helm chart for Kubernetes
-    digest: dd46b7c0fb44d61204367ed6645397b200145888cb7c49b0021d41033cc86f4e
+    digest: 5ff833422832fa54388fcc9cdc5e4eb6765f2945708e5546269c6685230cd2f2
     name: oragono
     type: application
     urls:
     - https://bbriggs.github.io/charts/oragono-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-10T08:27:09.688750137-05:00"
+  splashpage:
+  - apiVersion: v2
+    appVersion: v0.1.3
+    created: "2020-11-17T16:34:25.940537721-05:00"
+    description: A configurable authenticated application directory page for Keycloak
+    digest: db542308f2ebb09a0e8f0b33f6bda59d8ce76d672ebb2ff8fbe9c7ccca65b833
+    maintainers:
+    - email: code@fraq.io
+      name: fraq
+      url: https://github.com/bbriggs
+    name: splashpage
+    sources:
+    - https://github.com/np-hg/SplashPage
+    type: application
+    urls:
+    - https://bbriggs.github.io/charts/splashpage-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-11-17T16:34:25.932536422-05:00"
