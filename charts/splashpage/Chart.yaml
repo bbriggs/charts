@@ -1,0 +1,12 @@
+apiVersion: v2
+name: splashpage
+description: A configurable authenticated application directory page for Keycloak
+sources:
+  - https://github.com/np-hg/SplashPage
+maintainers:
+  - name: fraq
+    email: code@fraq.io
+    url: https://github.com/bbriggs
+type: application
+version: 0.1.0
+appVersion: v0.1.3
