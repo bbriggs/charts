@@ -33,6 +33,8 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command:
+            {{ toYaml .Values.args | nindent 10 }}
           ports:
             - name: http
               containerPort: 3000
@@ -45,6 +47,9 @@ spec:
             httpGet:
               path: /healthz
               port: http
+          volumeMounts:
+            - name: config
+              mountPath: /etc/splashpage
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
@@ -59,3 +64,10 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      volumes:
+      - name: config
+        configMap:
+         name: {{ template "splashpage.fullname" . }}
+         items:
+           - key: config.yaml
+             path: config.yaml
