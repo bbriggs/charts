@@ -6,4 +6,4 @@ metadata:
     {{- include "splashpage.labels" . | nindent 4 }}
 data:
   config.yaml: |
-  {{- toYaml .Values.configMap | nindent 2 }}
+  {{- toYaml .Values.configMap | nindent 4 }}
