@@ -15,7 +15,9 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-configMap: {}
+configMap:
+  data: {}
+  annotations: {}
 
 serviceAccount:
   # Specifies whether a service account should be created
