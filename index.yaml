@@ -34,7 +34,17 @@ entries:
   elastic-agent:
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-02-24T14:55:35.090014641-05:00"
+    created: "2021-02-24T14:58:43.580789297-05:00"
+    description: Deploy Elastic Agent to your Kubernetes cluster
+    digest: 7483778f6ce554ad6b7727bbc39fdb40be4f523af497aefe96a4cfa9f03bd24a
+    name: elastic-agent
+    type: application
+    urls:
+    - https://bbriggs.github.io/charts/elastic-agent-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: v7.11.1
+    created: "2021-02-24T14:58:43.580540826-05:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 6fb37d61d35a57e3306c30bbc476fef3d2bf6523ec448c1eac448de8def2e212
     name: elastic-agent
