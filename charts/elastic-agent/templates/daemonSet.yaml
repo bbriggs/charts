@@ -65,6 +65,7 @@ spec:
               readOnly: true
             - name: cgroup
               mountPath: /hostfs/sys/fs/cgroup
+              readOnly: true
       volumes:
       - name: varlibdockercontainers
         hostPath:
@@ -78,7 +79,10 @@ spec:
       - name: cgroup
         hostPath:
           path: /sys/fs/cgroup
-      - name: /var/lib/elastic-agent-data
+      - name: data
+        hostPath:
+          type: DirectoryOrCreate
+          path: /var/lib/elastic-agent-data
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
