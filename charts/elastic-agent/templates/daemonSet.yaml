@@ -61,7 +61,7 @@ spec:
             - name: data
               mountPath: /opt/Elastic/Agent/data
             - name: proc
-              mountpath: /hostfs/proc
+              mountPath: /hostfs/proc
               readOnly: true
             - name: cgroup
               mountPath: /hostfs/sys/fs/cgroup
