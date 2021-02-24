@@ -3,10 +3,10 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: {{ include "elastic-agent.fullname" . }}
-  namespace: {{ .Values.namespace }}
 subjects:
 - kind: ServiceAccount
   name: {{ include "elastic-agent.serviceAccountName" . }}
+  namespace: {{ .Release.Namespace }}
 roleRef:
   kind: ClusterRole
   name: {{ include "elastic-agent.fullname" . }}
