@@ -53,7 +53,7 @@ spec:
               mountPath: /var/log
               readOnly: true
             - name: data
-              mountPath: /opt/Elastic/Agent/data
+              mountPath: /opt/Elastic/Agent/
             - name: proc
               mountPath: /hostfs/proc
               readOnly: true
