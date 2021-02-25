@@ -52,8 +52,6 @@ spec:
             - name: varlog
               mountPath: /var/log
               readOnly: true
-            - name: data
-              mountPath: /opt/Elastic/Agent/
             - name: proc
               mountPath: /hostfs/proc
               readOnly: true
@@ -73,10 +71,6 @@ spec:
       - name: cgroup
         hostPath:
           path: /sys/fs/cgroup
-      - name: data
-        hostPath:
-          type: DirectoryOrCreate
-          path: /var/lib/elastic-agent-data
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

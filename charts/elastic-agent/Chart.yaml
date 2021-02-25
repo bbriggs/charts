@@ -2,5 +2,5 @@ apiVersion: v2
 name: elastic-agent
 description: Deploy Elastic Agent to your Kubernetes cluster
 type: application
-version: 0.1.9
+version: 0.1.10
 appVersion: "v7.11.1"
