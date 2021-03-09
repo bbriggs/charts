@@ -3,9 +3,9 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-03-08T22:26:34.158600345-05:00"
+    created: "2021-03-09T17:09:16.744140824-05:00"
     description: A golang chatbot
-    digest: adcc0bebf743a47720c009a70bf22e330c30c4c46830cd07093915816c4bbe77
+    digest: 7546318406b281e23041b3d2c1a3e0eeb37865ed4a18d28da5e0908a34b4143a
     name: bitbot
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-03-08T22:26:34.158245808-05:00"
+    created: "2021-03-09T17:09:16.743781992-05:00"
     description: A golang chatbot
     digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-03-08T22:26:34.157731879-05:00"
+    created: "2021-03-09T17:09:16.743250266-05:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -34,9 +34,9 @@ entries:
   elastic-agent:
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-03-08T22:26:34.158891242-05:00"
+    created: "2021-03-09T17:09:16.744441453-05:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
-    digest: 2379c6bc93465dde42512f0aff81b9506d67f457af4a386883aa4ca15b467c56
+    digest: 73452a7192f2c85e95869007ce2d4ecc47dbcc19c1c3f9c1a5aeb0988be484fe
     name: elastic-agent
     type: application
     urls:
@@ -44,7 +44,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-03-08T22:26:34.161138045-05:00"
+    created: "2021-03-09T17:09:16.746733335-05:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: ba4062c307ebb2431a0ebcfa42b8101d7554b19ab4140b34d5604a18f228e2af
     name: elastic-agent
@@ -54,7 +54,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-03-08T22:26:34.160766013-05:00"
+    created: "2021-03-09T17:09:16.746386514-05:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: ca35868a66ec90fcd19017bb3e28a64a5bc2f87317b0967676dbd3b1e81d9679
     name: elastic-agent
@@ -64,7 +64,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-03-08T22:26:34.160350133-05:00"
+    created: "2021-03-09T17:09:16.745967175-05:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 006456561c5846b5658734234d2ece02adb1ecf05d1e6e7920e5d595fc8d6c1c
     name: elastic-agent
@@ -74,7 +74,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-03-08T22:26:34.159985202-05:00"
+    created: "2021-03-09T17:09:16.745610685-05:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: d38c21d6836f48b5e927ac6ff6309ae10b404093d5f8e8963b94ada0bd30b733
     name: elastic-agent
@@ -84,7 +84,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-03-08T22:26:34.159561311-05:00"
+    created: "2021-03-09T17:09:16.745149144-05:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 7bbff3b60cab43bf99bea35ef599965e80b360d7f4ac55900db3b3251bde9ab2
     name: elastic-agent
@@ -95,20 +95,31 @@ entries:
   flexo:
   - apiVersion: v2
     appVersion: v0.1.6
-    created: "2021-03-08T22:26:34.161469041-05:00"
+    created: "2021-03-09T17:09:16.747085461-05:00"
     description: A Helm chart for Kubernetes
-    digest: 0e32f55b58d91927ed2e46c83eed6165f82cbbfb622bc44aa96f60e3fea93608
+    digest: fc32ce97c5de90069c4caa2eff74be54492d5d79f0d4f28cc38b9ace715e78bf
     name: flexo
     type: application
     urls:
     - https://bbriggs.github.io/charts/flexo-0.1.0.tgz
     version: 0.1.0
+  flexo-web:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2021-03-09T17:09:16.747430268-05:00"
+    description: Web frontend for Flexo
+    digest: 2d70141f51400a07e9865f77a3b237859632355ccc406b743aa203f9f2fe1769
+    name: flexo-web
+    type: application
+    urls:
+    - https://bbriggs.github.io/charts/flexo-web-0.1.0.tgz
+    version: 0.1.0
   fusionauth:
   - apiVersion: v1
     appVersion: 1.16.1
-    created: "2021-03-08T22:26:34.162057098-05:00"
+    created: "2021-03-09T17:09:16.748984807-05:00"
     description: Helm chart for fusionauth
-    digest: 240955c274a0ae54d99b4ef2b975fc72feefdaa64571a202a15af0d31407d3d0
+    digest: 0e984afd93e126c0c6609198e8f3eb72b2ebbf13ba2d68a8b5ba6089c364bb7e
     name: fusionauth
     urls:
     - https://bbriggs.github.io/charts/fusionauth-0.4.2.tgz
@@ -116,9 +127,9 @@ entries:
   jupyterhub:
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2021-03-08T22:26:34.167442323-05:00"
+    created: "2021-03-09T17:09:16.75423235-05:00"
     description: Multi-user Jupyter installation
-    digest: e0806008fac8e6acea2885265b2614b710a8fcdac48f48d841f8882b0f2e2538
+    digest: 7c86ee2d921109507b5ef1362e5ea6a67c27a7f5c4ee615f71e7df6f6ecd9a61
     home: https://z2jh.jupyter.org
     icon: https://jupyter.org/assets/hublogo.svg
     kubeVersion: '>=1.11.0-0'
@@ -135,7 +146,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2021-03-08T22:26:34.165309951-05:00"
+    created: "2021-03-09T17:09:16.751793889-05:00"
     description: Multi-user Jupyter installation
     digest: 931bf377850db56a34126043d786ab5a2180b7a450b50ce756009452707b4f23
     home: https://z2jh.jupyter.org
@@ -155,9 +166,9 @@ entries:
   oragono:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-03-08T22:26:34.167793025-05:00"
+    created: "2021-03-09T17:09:16.754728879-05:00"
     description: A Helm chart for Kubernetes
-    digest: 2808c180710e3ec0019e60923d5e0421b9a4b907f7888aacc0ac35b8f2f63bba
+    digest: 749efd9c6d1d281661dc8b8090ac1a1ef8fc4c28be2bc6d3313817920cc071bc
     name: oragono
     type: application
     urls:
@@ -166,9 +177,9 @@ entries:
   splashpage:
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2021-03-08T22:26:34.168157073-05:00"
+    created: "2021-03-09T17:09:16.755182218-05:00"
     description: A configurable authenticated application directory page for Keycloak
-    digest: c95bf91a42a118087855e0bcbf20b985d0db465ccc09b09ace42647eaf9cf8d3
+    digest: 5aacc19984c504a0c3a00f3e44e0f976dcdff25bc4378b0fbda200623a797f1c
     maintainers:
     - email: code@fraq.io
       name: fraq
@@ -180,4 +191,4 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/splashpage-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-08T22:26:34.157053161-05:00"
+generated: "2021-03-09T17:09:16.742478786-05:00"
