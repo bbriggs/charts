@@ -56,8 +56,10 @@ spec:
             - mountPath: /ircd/ircd.yaml
               name: config
               subPath: ircd.yaml
+            {{ if .Values.tls.enabled }}
             - mountPath: /certs/
               name: certificates
+            {{- end }}
             - mountPath: /data
               name: data
           resources:
@@ -66,9 +68,11 @@ spec:
         - name: config
           configMap:
             name: {{ include "oragono.fullname" . }}
+        {{- if .Values.tls.enabled }}
         - name: certificates
           secret:
             secretName: {{ .Values.tls.secretName }}
+        {{- end }}
         - name: data
           persistentVolumeClaim:
             claimName: {{ include "oragono.fullname" . }}
