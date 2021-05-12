@@ -3,7 +3,7 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-05-06T13:12:52.980966511-04:00"
+    created: "2021-05-12T13:13:28.535587997-04:00"
     description: A golang chatbot
     digest: 1f3b0a245baa2ae203e7065339d2bcca6f7e949fdf15b1237bce6c38b8b56a1c
     name: bitbot
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-05-06T13:12:52.980631168-04:00"
+    created: "2021-05-12T13:13:28.53349434-04:00"
     description: A golang chatbot
     digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-05-06T13:12:52.98029819-04:00"
+    created: "2021-05-12T13:13:28.531403428-04:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -34,7 +34,7 @@ entries:
   elastic-agent:
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-06T13:12:52.981232197-04:00"
+    created: "2021-05-12T13:13:28.537111254-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 2804dc65c393327fa40f02b2247f31f66d320e3500f75e86a0f742ac17b19098
     name: elastic-agent
@@ -44,7 +44,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-06T13:12:52.982597255-04:00"
+    created: "2021-05-12T13:13:28.545291226-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: ba4062c307ebb2431a0ebcfa42b8101d7554b19ab4140b34d5604a18f228e2af
     name: elastic-agent
@@ -54,7 +54,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-06T13:12:52.982324457-04:00"
+    created: "2021-05-12T13:13:28.543614999-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: ca35868a66ec90fcd19017bb3e28a64a5bc2f87317b0967676dbd3b1e81d9679
     name: elastic-agent
@@ -64,7 +64,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-06T13:12:52.982050675-04:00"
+    created: "2021-05-12T13:13:28.541816405-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 006456561c5846b5658734234d2ece02adb1ecf05d1e6e7920e5d595fc8d6c1c
     name: elastic-agent
@@ -74,7 +74,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-06T13:12:52.981791619-04:00"
+    created: "2021-05-12T13:13:28.540190596-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: d38c21d6836f48b5e927ac6ff6309ae10b404093d5f8e8963b94ada0bd30b733
     name: elastic-agent
@@ -84,7 +84,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-06T13:12:52.981527854-04:00"
+    created: "2021-05-12T13:13:28.53859579-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 7bbff3b60cab43bf99bea35ef599965e80b360d7f4ac55900db3b3251bde9ab2
     name: elastic-agent
@@ -95,7 +95,7 @@ entries:
   flexo:
   - apiVersion: v2
     appVersion: v0.1.6
-    created: "2021-05-06T13:12:52.982922168-04:00"
+    created: "2021-05-12T13:13:28.546967717-04:00"
     description: A Helm chart for Kubernetes
     digest: 0e32f55b58d91927ed2e46c83eed6165f82cbbfb622bc44aa96f60e3fea93608
     name: flexo
@@ -106,7 +106,7 @@ entries:
   flexo-web:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2021-05-06T13:12:52.983897295-04:00"
+    created: "2021-05-12T13:13:28.548374203-04:00"
     description: Web frontend for Flexo
     digest: 2d70141f51400a07e9865f77a3b237859632355ccc406b743aa203f9f2fe1769
     name: flexo-web
@@ -117,7 +117,7 @@ entries:
   fusionauth:
   - apiVersion: v1
     appVersion: 1.16.1
-    created: "2021-05-06T13:12:52.984511388-04:00"
+    created: "2021-05-12T13:13:28.552555835-04:00"
     description: Helm chart for fusionauth
     digest: 16e7adaf7d0c984bc79841a2aa14382ab6ae3e69a3269c9d251f8a5001992f60
     name: fusionauth
@@ -127,7 +127,7 @@ entries:
   jupyterhub:
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2021-05-06T13:12:52.98916666-04:00"
+    created: "2021-05-12T13:13:28.65697756-04:00"
     description: Multi-user Jupyter installation
     digest: 6c0560f73c705411260426aeae866c1d6b9b78e8a2180ae10cc43116f3a61dbe
     home: https://z2jh.jupyter.org
@@ -146,7 +146,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2021-05-06T13:12:52.986885167-04:00"
+    created: "2021-05-12T13:13:28.646125538-04:00"
     description: Multi-user Jupyter installation
     digest: 931bf377850db56a34126043d786ab5a2180b7a450b50ce756009452707b4f23
     home: https://z2jh.jupyter.org
@@ -166,7 +166,7 @@ entries:
   oragono:
   - apiVersion: v2
     appVersion: v2.5.1
-    created: "2021-05-06T13:12:52.990258777-04:00"
+    created: "2021-05-12T13:13:28.66317058-04:00"
     description: A Helm chart for Kubernetes
     digest: 3ff8e9f84640413013aeeef363acbbc97c41ec8b98cb0fc0e6415308a556d9a5
     name: oragono
@@ -176,7 +176,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: v2.5.1
-    created: "2021-05-06T13:12:52.989884846-04:00"
+    created: "2021-05-12T13:13:28.661113393-04:00"
     description: A Helm chart for Kubernetes
     digest: 9665cd817f1c58210a4ca2141a117ba00f8012070b076671dab5fbdb51d3d3ee
     name: oragono
@@ -186,7 +186,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: latest
-    created: "2021-05-06T13:12:52.989531325-04:00"
+    created: "2021-05-12T13:13:28.658968934-04:00"
     description: A Helm chart for Kubernetes
     digest: c6809833a7b7cfdea566c0545c813ef8d2d59aa5ab87b1a74f6267afd53d2279
     name: oragono
@@ -194,10 +194,21 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/oragono-0.1.0.tgz
     version: 0.1.0
+  quotes:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2021-05-12T13:13:28.664627544-04:00"
+    description: A small REST-ful quotes generator
+    digest: e0d53b83ea6576d524486bc0176b04d975e773cce4aa05a5b2f589c412854df3
+    name: quotes
+    type: application
+    urls:
+    - https://bbriggs.github.io/charts/quotes-0.1.1.tgz
+    version: 0.1.1
   splashpage:
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2021-05-06T13:12:52.990660166-04:00"
+    created: "2021-05-12T13:13:28.666640381-04:00"
     description: A configurable authenticated application directory page for Keycloak
     digest: 351c8fcd9d90a471582996faed7b288cf33915b0e3f0e605f7ef09fe7aa5dcd2
     maintainers:
@@ -214,7 +225,7 @@ entries:
   static-site:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-05-06T13:12:52.990986659-04:00"
+    created: "2021-05-12T13:13:28.668344376-04:00"
     description: A Helm chart for Kubernetes
     digest: c95e242d92a96fd1d42a3330da779f49ebf0d03f756f9e482d1cc5bc486c3863
     name: static-site
@@ -222,4 +233,4 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/static-site-0.1.1.tgz
     version: 0.1.1
-generated: "2021-05-06T13:12:52.97983956-04:00"
+generated: "2021-05-12T13:13:28.450442627-04:00"

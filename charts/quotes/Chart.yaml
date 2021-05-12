@@ -1,0 +1,6 @@
+apiVersion: v2
+name: quotes
+description: A small REST-ful quotes generator
+type: application
+version: 0.1.1
+appVersion: latest
