@@ -34,7 +34,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           args:
-            - "-address={{ .Values.config.server }}"
+            - "-server={{ .Values.config.server }}"
             - "-tls={{ .Values.config.tls }}"
             - "-id={{ .Values.config.id }}"
             - "-inbound={{ .Values.config.inbound }}"
