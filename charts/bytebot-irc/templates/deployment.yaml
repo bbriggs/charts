@@ -33,6 +33,13 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          args:
+            - "-address={{ .Values.config.server }}"
+            - "-tls={{ .Values.config.tls }}"
+            - "-id={{ .Values.config.id }}"
+            - "-inbound={{ .Values.config.inbound }}"
+            - "-outbound={{ .Values.config.outbound }}"
+            - "-nick={{ .Values.config.nick }}"
           env:
             {{- with .Values.env }}
             {{- toYaml . | nindent 12 }}

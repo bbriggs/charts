@@ -8,6 +8,14 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: edge
 
+config:
+  server: "irc.example.com:6697"
+  tls: true
+  id: "gw-irc-example"
+  inbound: "irc-inbound"
+  outbound: "irc-outbound"
+  nick: "bytebot"
+
 env: []
 imagePullSecrets: []
 nameOverride: ""
