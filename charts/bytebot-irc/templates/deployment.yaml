@@ -36,6 +36,7 @@ spec:
           args:
             - "-server={{ .Values.config.server }}"
             - "-tls={{ .Values.config.tls }}"
+            - "-redis={{ .Values.config.redis }}"
             - "-id={{ .Values.config.id }}"
             - "-inbound={{ .Values.config.inbound }}"
             - "-outbound={{ .Values.config.outbound }}"

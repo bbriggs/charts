@@ -15,6 +15,7 @@ config:
   inbound: "irc-inbound"
   outbound: "irc-outbound"
   nick: "bytebot"
+  redis: "redis:6379"
 
 env: []
 imagePullSecrets: []
