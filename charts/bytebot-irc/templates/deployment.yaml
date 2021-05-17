@@ -41,6 +41,9 @@ spec:
             - "-inbound={{ .Values.config.inbound }}"
             - "-outbound={{ .Values.config.outbound }}"
             - "-nick={{ .Values.config.nick }}"
+          {{- range values.config.channels }}
+            - "-channel={{ . }}"
+          {{- end }}
           env:
             {{- with .Values.env }}
             {{- toYaml . | nindent 12 }}
