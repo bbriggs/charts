@@ -42,7 +42,7 @@ spec:
             - "-outbound={{ .Values.config.outbound }}"
             - "-nick={{ .Values.config.nick }}"
           {{- range values.config.channels }}
-            - "-channel={{ . }}"
+            - "-channel={{ . | nindent 12 }}"
           {{- end }}
           env:
             {{- with .Values.env }}
