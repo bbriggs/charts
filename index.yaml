@@ -3,7 +3,7 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-05-17T16:37:09.370479523-04:00"
+    created: "2021-06-10T18:23:29.174507897-04:00"
     description: A golang chatbot
     digest: 1f3b0a245baa2ae203e7065339d2bcca6f7e949fdf15b1237bce6c38b8b56a1c
     name: bitbot
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-05-17T16:37:09.369973929-04:00"
+    created: "2021-06-10T18:23:29.17418775-04:00"
     description: A golang chatbot
     digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2021-05-17T16:37:09.369489955-04:00"
+    created: "2021-06-10T18:23:29.173839571-04:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -34,7 +34,17 @@ entries:
   bytebot-irc:
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2021-05-17T16:37:09.373287947-04:00"
+    created: "2021-06-10T18:23:29.176772187-04:00"
+    description: the IRC gateway service of Bytebot
+    digest: 203eb6db604ebc1099792e7e3ffb073560c68c5a4b9cbe850cb03d7396bc2d2c
+    name: bytebot-irc
+    type: application
+    urls:
+    - https://bbriggs.github.io/charts/bytebot-irc-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2021-06-10T18:23:29.17647955-04:00"
     description: the IRC gateway service of Bytebot
     digest: 0b5b8aac4693a9c23e21d237913e3dc6bb151c0c592d181b987e425d1e746c1d
     name: bytebot-irc
@@ -44,7 +54,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2021-05-17T16:37:09.372975721-04:00"
+    created: "2021-06-10T18:23:29.176187107-04:00"
     description: the IRC gateway service of Bytebot
     digest: eb4607fa0f0b8123a79c1a543e9a5b696a71782d8e06b2e04185155a24514fb3
     name: bytebot-irc
@@ -54,7 +64,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2021-05-17T16:37:09.372528596-04:00"
+    created: "2021-06-10T18:23:29.175871474-04:00"
     description: the IRC gateway service of Bytebot
     digest: 2f26ddb2a5dd411dedaaa5579f6c13a3dda6a754ee4532284db7afb7298853cb
     name: bytebot-irc
@@ -64,7 +74,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2021-05-17T16:37:09.372116384-04:00"
+    created: "2021-06-10T18:23:29.175590886-04:00"
     description: the IRC gateway service of Bytebot
     digest: 4fb8191041b1b2f6bb39f4550184b42dd84c3e1ce94ac1f92fc2b2b600172623
     name: bytebot-irc
@@ -74,7 +84,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2021-05-17T16:37:09.371672105-04:00"
+    created: "2021-06-10T18:23:29.175314597-04:00"
     description: the IRC gateway service of Bytebot
     digest: 1f6e7b2c3280e425f302a1efdc3a2902fa8dc975a01ffde5c3613224404d1c71
     name: bytebot-irc
@@ -84,7 +94,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2021-05-17T16:37:09.371294958-04:00"
+    created: "2021-06-10T18:23:29.175053844-04:00"
     description: the IRC gateway service of Bytebot
     digest: 3637c45187139f30e49d77f3d541644936a452db58c0cc7dcfc9d04778e18fab
     name: bytebot-irc
@@ -94,7 +104,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2021-05-17T16:37:09.370879234-04:00"
+    created: "2021-06-10T18:23:29.174786366-04:00"
     description: the IRC gateway service of Bytebot
     digest: fa64b7256b46095e1fd6d4943c77d3605b64e9c7d76c987fc924a85125f7cf76
     name: bytebot-irc
@@ -105,7 +115,7 @@ entries:
   elastic-agent:
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-17T16:37:09.373681378-04:00"
+    created: "2021-06-10T18:23:29.177028838-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 2804dc65c393327fa40f02b2247f31f66d320e3500f75e86a0f742ac17b19098
     name: elastic-agent
@@ -115,7 +125,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-17T16:37:09.37728809-04:00"
+    created: "2021-06-10T18:23:29.179015596-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: ba4062c307ebb2431a0ebcfa42b8101d7554b19ab4140b34d5604a18f228e2af
     name: elastic-agent
@@ -125,7 +135,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-17T16:37:09.376615042-04:00"
+    created: "2021-06-10T18:23:29.17875017-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: ca35868a66ec90fcd19017bb3e28a64a5bc2f87317b0967676dbd3b1e81d9679
     name: elastic-agent
@@ -135,7 +145,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-17T16:37:09.375529593-04:00"
+    created: "2021-06-10T18:23:29.178080065-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 006456561c5846b5658734234d2ece02adb1ecf05d1e6e7920e5d595fc8d6c1c
     name: elastic-agent
@@ -145,7 +155,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-17T16:37:09.375128591-04:00"
+    created: "2021-06-10T18:23:29.177618124-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: d38c21d6836f48b5e927ac6ff6309ae10b404093d5f8e8963b94ada0bd30b733
     name: elastic-agent
@@ -155,7 +165,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: v7.11.1
-    created: "2021-05-17T16:37:09.374383301-04:00"
+    created: "2021-06-10T18:23:29.177311448-04:00"
     description: Deploy Elastic Agent to your Kubernetes cluster
     digest: 7bbff3b60cab43bf99bea35ef599965e80b360d7f4ac55900db3b3251bde9ab2
     name: elastic-agent
@@ -166,7 +176,7 @@ entries:
   flexo:
   - apiVersion: v2
     appVersion: v0.1.6
-    created: "2021-05-17T16:37:09.377755098-04:00"
+    created: "2021-06-10T18:23:29.179345087-04:00"
     description: A Helm chart for Kubernetes
     digest: 0e32f55b58d91927ed2e46c83eed6165f82cbbfb622bc44aa96f60e3fea93608
     name: flexo
@@ -177,7 +187,7 @@ entries:
   flexo-web:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2021-05-17T16:37:09.378273418-04:00"
+    created: "2021-06-10T18:23:29.179745497-04:00"
     description: Web frontend for Flexo
     digest: 2d70141f51400a07e9865f77a3b237859632355ccc406b743aa203f9f2fe1769
     name: flexo-web
@@ -188,7 +198,7 @@ entries:
   fusionauth:
   - apiVersion: v1
     appVersion: 1.16.1
-    created: "2021-05-17T16:37:09.379030522-04:00"
+    created: "2021-06-10T18:23:29.180329064-04:00"
     description: Helm chart for fusionauth
     digest: 16e7adaf7d0c984bc79841a2aa14382ab6ae3e69a3269c9d251f8a5001992f60
     name: fusionauth
@@ -198,7 +208,7 @@ entries:
   jupyterhub:
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2021-05-17T16:37:09.387594618-04:00"
+    created: "2021-06-10T18:23:29.184828209-04:00"
     description: Multi-user Jupyter installation
     digest: 6c0560f73c705411260426aeae866c1d6b9b78e8a2180ae10cc43116f3a61dbe
     home: https://z2jh.jupyter.org
@@ -217,7 +227,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2021-05-17T16:37:09.385183141-04:00"
+    created: "2021-06-10T18:23:29.182585362-04:00"
     description: Multi-user Jupyter installation
     digest: 931bf377850db56a34126043d786ab5a2180b7a450b50ce756009452707b4f23
     home: https://z2jh.jupyter.org
@@ -237,7 +247,7 @@ entries:
   oragono:
   - apiVersion: v2
     appVersion: v2.5.1
-    created: "2021-05-17T16:37:09.389576334-04:00"
+    created: "2021-06-10T18:23:29.186782451-04:00"
     description: A modern IRC server (daemon/ircd) written in Go.
     digest: 81631341976188836e14bc59cfdcf4496b3fd268c5bf2441d733d98c738907d7
     name: oragono
@@ -247,7 +257,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: v2.5.1
-    created: "2021-05-17T16:37:09.38910439-04:00"
+    created: "2021-06-10T18:23:29.185884076-04:00"
     description: A Helm chart for Kubernetes
     digest: 3ff8e9f84640413013aeeef363acbbc97c41ec8b98cb0fc0e6415308a556d9a5
     name: oragono
@@ -257,7 +267,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: v2.5.1
-    created: "2021-05-17T16:37:09.38858939-04:00"
+    created: "2021-06-10T18:23:29.185531987-04:00"
     description: A Helm chart for Kubernetes
     digest: 9665cd817f1c58210a4ca2141a117ba00f8012070b076671dab5fbdb51d3d3ee
     name: oragono
@@ -267,7 +277,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: latest
-    created: "2021-05-17T16:37:09.388074353-04:00"
+    created: "2021-06-10T18:23:29.185182551-04:00"
     description: A Helm chart for Kubernetes
     digest: c6809833a7b7cfdea566c0545c813ef8d2d59aa5ab87b1a74f6267afd53d2279
     name: oragono
@@ -278,7 +288,7 @@ entries:
   quotes:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-05-17T16:37:09.390544141-04:00"
+    created: "2021-06-10T18:23:29.187249025-04:00"
     description: A small REST-ful quotes generator
     digest: e0d53b83ea6576d524486bc0176b04d975e773cce4aa05a5b2f589c412854df3
     name: quotes
@@ -289,7 +299,7 @@ entries:
   splashpage:
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2021-05-17T16:37:09.391096632-04:00"
+    created: "2021-06-10T18:23:29.187641804-04:00"
     description: A configurable authenticated application directory page for Keycloak
     digest: 351c8fcd9d90a471582996faed7b288cf33915b0e3f0e605f7ef09fe7aa5dcd2
     maintainers:
@@ -306,7 +316,7 @@ entries:
   static-site:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-05-17T16:37:09.391648991-04:00"
+    created: "2021-06-10T18:23:29.187954376-04:00"
     description: A Helm chart for Kubernetes
     digest: c95e242d92a96fd1d42a3330da779f49ebf0d03f756f9e482d1cc5bc486c3863
     name: static-site
@@ -314,4 +324,4 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/static-site-0.1.1.tgz
     version: 0.1.1
-generated: "2021-05-17T16:37:09.364878088-04:00"
+generated: "2021-06-10T18:23:29.173399092-04:00"
