@@ -1,6 +1,0 @@
-apiVersion: v2
-name: bytebot-irc
-description: the IRC gateway service of Bytebot
-type: application
-version: 0.0.8
-appVersion: 0.0.0
