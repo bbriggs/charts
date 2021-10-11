@@ -31,6 +31,17 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/bitbot-0.1.0.tgz
     version: 0.1.0
+  elastic-agent:
+  - apiVersion: v2
+    appVersion: v7.11.1
+    created: "2021-10-11T01:31:11.641868777Z"
+    description: Deploy Elastic Agent to your Kubernetes cluster
+    digest: 837d6e2107e58f5c2ae869941595cff1b861459d15789f0faa591f0e88b4371a
+    name: elastic-agent
+    type: application
+    urls:
+    - https://github.com/bbriggs/charts/releases/download/elastic-agent-0.1.10/elastic-agent-0.1.10.tgz
+    version: 0.1.10
   flexo:
   - apiVersion: v2
     appVersion: v0.1.6
@@ -192,4 +203,4 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/static-site-0.1.1.tgz
     version: 0.1.1
-generated: "2021-08-31T09:35:06.872156876-04:00"
+generated: "2021-10-11T01:31:12.810603431Z"
