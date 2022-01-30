@@ -31,17 +31,6 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/bitbot-0.1.0.tgz
     version: 0.1.0
-  elastic-agent:
-  - apiVersion: v2
-    appVersion: v7.11.1
-    created: "2021-10-11T01:31:11.641868777Z"
-    description: Deploy Elastic Agent to your Kubernetes cluster
-    digest: 837d6e2107e58f5c2ae869941595cff1b861459d15789f0faa591f0e88b4371a
-    name: elastic-agent
-    type: application
-    urls:
-    - https://github.com/bbriggs/charts/releases/download/elastic-agent-0.1.10/elastic-agent-0.1.10.tgz
-    version: 0.1.10
   flexo:
   - apiVersion: v2
     appVersion: v0.1.6
@@ -154,6 +143,29 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/oragono-0.1.0.tgz
     version: 0.1.0
+  postgres-operator:
+  - apiVersion: v1
+    appVersion: 1.7.1
+    created: "2022-01-30T02:36:35.081213961Z"
+    description: Postgres Operator creates and manages PostgreSQL clusters running
+      in Kubernetes
+    digest: f459abe61d0be297879a47495f46996e6598076d3b7de73cc15a9004ca4bf7c3
+    home: https://github.com/zalando/postgres-operator
+    keywords:
+    - postgres
+    - operator
+    - cloud-native
+    - patroni
+    - spilo
+    maintainers:
+    - email: opensource@zalando.de
+      name: Zalando
+    name: postgres-operator
+    sources:
+    - https://github.com/zalando/postgres-operator
+    urls:
+    - https://github.com/bbriggs/charts/releases/download/postgres-operator-1.7.1/postgres-operator-1.7.1.tgz
+    version: 1.7.1
   quotes:
   - apiVersion: v2
     appVersion: latest
@@ -203,4 +215,4 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/static-site-0.1.1.tgz
     version: 0.1.1
-generated: "2021-10-11T01:31:12.810603431Z"
+generated: "2022-01-30T02:36:35.081241361Z"
