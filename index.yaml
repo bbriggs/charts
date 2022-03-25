@@ -3,7 +3,7 @@ entries:
   bitbot:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2022-01-29T21:35:15.389165461-05:00"
+    created: "2022-03-25T10:18:39.944422211-04:00"
     description: A golang chatbot
     digest: 1f3b0a245baa2ae203e7065339d2bcca6f7e949fdf15b1237bce6c38b8b56a1c
     name: bitbot
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2022-01-29T21:35:15.388276174-05:00"
+    created: "2022-03-25T10:18:39.943870627-04:00"
     description: A golang chatbot
     digest: 7e2a1aeeddffa2e92325505132484ff1e142988303b4bac804f3a73db6e73ff5
     name: bitbot
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2022-01-29T21:35:15.387688741-05:00"
+    created: "2022-03-25T10:18:39.943337041-04:00"
     description: A golang chatbot
     digest: e1f66c1de311c74c9b7cbdff15aebfaa58f10fe0842d436545fb3adb6d756bd7
     name: bitbot
@@ -34,7 +34,7 @@ entries:
   flexo:
   - apiVersion: v2
     appVersion: v0.1.6
-    created: "2022-01-29T21:35:15.389685049-05:00"
+    created: "2022-03-25T10:18:39.944860998-04:00"
     description: A Helm chart for Kubernetes
     digest: 0e32f55b58d91927ed2e46c83eed6165f82cbbfb622bc44aa96f60e3fea93608
     name: flexo
@@ -45,7 +45,7 @@ entries:
   flexo-web:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2022-01-29T21:35:15.390188575-05:00"
+    created: "2022-03-25T10:18:39.945285123-04:00"
     description: Web frontend for Flexo
     digest: 2d70141f51400a07e9865f77a3b237859632355ccc406b743aa203f9f2fe1769
     name: flexo-web
@@ -56,7 +56,7 @@ entries:
   fusionauth:
   - apiVersion: v1
     appVersion: 1.16.1
-    created: "2022-01-29T21:35:15.390999183-05:00"
+    created: "2022-03-25T10:18:39.946119695-04:00"
     description: Helm chart for fusionauth
     digest: 16e7adaf7d0c984bc79841a2aa14382ab6ae3e69a3269c9d251f8a5001992f60
     name: fusionauth
@@ -66,7 +66,7 @@ entries:
   jupyterhub:
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2022-01-29T21:35:15.400457181-05:00"
+    created: "2022-03-25T10:18:39.952639965-04:00"
     description: Multi-user Jupyter installation
     digest: 6c0560f73c705411260426aeae866c1d6b9b78e8a2180ae10cc43116f3a61dbe
     home: https://z2jh.jupyter.org
@@ -85,7 +85,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 1.2.0b1
-    created: "2022-01-29T21:35:15.397386467-05:00"
+    created: "2022-03-25T10:18:39.950030777-04:00"
     description: Multi-user Jupyter installation
     digest: 931bf377850db56a34126043d786ab5a2180b7a450b50ce756009452707b4f23
     home: https://z2jh.jupyter.org
@@ -105,7 +105,7 @@ entries:
   oragono:
   - apiVersion: v2
     appVersion: v2.5.1
-    created: "2022-01-29T21:35:15.402828284-05:00"
+    created: "2022-03-25T10:18:39.95438948-04:00"
     description: A modern IRC server (daemon/ircd) written in Go.
     digest: 81631341976188836e14bc59cfdcf4496b3fd268c5bf2441d733d98c738907d7
     name: oragono
@@ -115,7 +115,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: v2.5.1
-    created: "2022-01-29T21:35:15.402355694-05:00"
+    created: "2022-03-25T10:18:39.953939433-04:00"
     description: A Helm chart for Kubernetes
     digest: 3ff8e9f84640413013aeeef363acbbc97c41ec8b98cb0fc0e6415308a556d9a5
     name: oragono
@@ -125,7 +125,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: v2.5.1
-    created: "2022-01-29T21:35:15.401768409-05:00"
+    created: "2022-03-25T10:18:39.95348255-04:00"
     description: A Helm chart for Kubernetes
     digest: 9665cd817f1c58210a4ca2141a117ba00f8012070b076671dab5fbdb51d3d3ee
     name: oragono
@@ -135,7 +135,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: latest
-    created: "2022-01-29T21:35:15.401169645-05:00"
+    created: "2022-03-25T10:18:39.953059675-04:00"
     description: A Helm chart for Kubernetes
     digest: c6809833a7b7cfdea566c0545c813ef8d2d59aa5ab87b1a74f6267afd53d2279
     name: oragono
@@ -146,7 +146,7 @@ entries:
   postgres-operator:
   - apiVersion: v1
     appVersion: 1.7.1
-    created: "2022-01-29T21:35:15.403953423-05:00"
+    created: "2022-03-25T10:18:39.955592193-04:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: 54ea0daf949f22699b085f45adbd661af71a4b1c4aa985031359b3c62a2c1ab1
@@ -169,7 +169,7 @@ entries:
   quotes:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-01-29T21:35:15.404401588-05:00"
+    created: "2022-03-25T10:18:39.955945753-04:00"
     description: A small REST-ful quotes generator
     digest: e0d53b83ea6576d524486bc0176b04d975e773cce4aa05a5b2f589c412854df3
     name: quotes
@@ -180,7 +180,7 @@ entries:
   splashpage:
   - apiVersion: v2
     appVersion: v0.1.3
-    created: "2022-01-29T21:35:15.404953408-05:00"
+    created: "2022-03-25T10:18:39.956367717-04:00"
     description: A configurable authenticated application directory page for Keycloak
     digest: 351c8fcd9d90a471582996faed7b288cf33915b0e3f0e605f7ef09fe7aa5dcd2
     maintainers:
@@ -197,7 +197,17 @@ entries:
   static-site:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-01-29T21:35:15.405879724-05:00"
+    created: "2022-03-25T10:18:39.957873695-04:00"
+    description: A Helm chart for Kubernetes
+    digest: d6973b9efe7788afbfec1f30346293bcf2ad577654c4321db7e51e22bb723cc4
+    name: static-site
+    type: application
+    urls:
+    - https://bbriggs.github.io/charts/static-site-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-03-25T10:18:39.957511059-04:00"
     description: A Helm chart for Kubernetes
     digest: f0ae9daf589360130726282be310ca28c91736b31e2c0484d1513a83cc277eaf
     name: static-site
@@ -207,7 +217,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: latest
-    created: "2022-01-29T21:35:15.405469808-05:00"
+    created: "2022-03-25T10:18:39.956723748-04:00"
     description: A Helm chart for Kubernetes
     digest: c95e242d92a96fd1d42a3330da779f49ebf0d03f756f9e482d1cc5bc486c3863
     name: static-site
@@ -215,4 +225,4 @@ entries:
     urls:
     - https://bbriggs.github.io/charts/static-site-0.1.1.tgz
     version: 0.1.1
-generated: "2022-01-29T21:35:15.386240068-05:00"
+generated: "2022-03-25T10:18:39.942633697-04:00"
